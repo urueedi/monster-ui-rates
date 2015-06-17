@@ -1,0 +1,52 @@
+{
+	"rates": {
+		"addCD": "+ Ajouter des données personnalisées",
+		"addrate": "créer un nouveau taux",
+		"delete": "effacer",
+		"deleteRequest": "etes-vous sûr que vous voulez supprimer",
+		"deleteTitle": "supprimer ?",
+		"dialograte": {
+                        "addTitle": "créer un nouveau taux",
+                        "editTitle": "taux d'édition",
+                        "ratename": "nomdest",
+                        "isocode": "code ISO",
+                        "direction": "out/entrante",
+                        "weight": "le poids",
+                        "surcharge": "surtaxe",
+                        "pvttype": "type",
+                        "flatrate": "flatrate incl.",
+                        "prefix": "préfixe",
+                        "routecode": "Code de la route",
+                        "ratecost": "le coût des",
+                        "internalcost": "coût",
+                        "routes": "itinéraire (regex)",
+                        "max": "max. pointant sec",
+                        "min": "min. pointant sec",
+                        "description": "la description",
+                        "ratenochargetime": "pas le taux befor (s)",
+                        "options": "les options",
+                        "carrier": "CarrierName",
+                        "Direction": {
+                                "incoming": "nouveau",
+                                "outgoing": "sortant"
+                        },
+"placeholderName": "nom d'utilisateur",
+                        "createrates": "ajouter taux",
+			"save": "sauver"
+		},
+		"editCD": "+ Modifier des données personnalisées",
+		"empty-row": "il y avait trouvés mathing votre recherche pas de taux.",
+		"info": "taux est une capacité où notre système peut notifier votre programme Web à tout moment quelque chose d'intéressant se passe. par exemple, si quelqu'un remplit un appel téléphonique, nous pouvons vous informer en temps réel et vous dire qui ils parlaient, et pour combien de temps.",
+		"info2": "Pour utiliser cette fonction, configurer une URL pour votre serveur web et nous dire quel type d'événements que vous voulez être notifié de, et dans quel format. Cette fonction se applique à l'ensemble de votre compte et des applications au sein de ce compte, mais pas les sous- comptes.",
+		"less": "cacher info sur les taux",
+		"more": "plus d'info sur les taux",
+		"no-rates": "il n'y a pas de taux configurés.",
+		"search": "la recherche",
+		"toastr": {
+			"addSuccess": "vous avez ajouté avec succès",
+			"deleteSuccess": "vous avez supprimé avec succès",
+			"editSuccess": "vous avez modifié avec succès"
+		},
+		"warning": "vous ne pouvez pas sauvegarder les données personnalisées avec le même identifiant. se il vous plaît entrer un identifiant différent."
+	}
+}

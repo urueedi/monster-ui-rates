@@ -1,0 +1,289 @@
+#rates_dialog a {
+	color: #009DE6;
+	font-size: 12px;
+}
+
+#rates_dialog .row-fluid.row-popup {
+	padding: 2px 0;
+}
+
+#rates_dialog .top-splitter {
+	border-top: 1px solid #ccc;
+}
+
+#rates_dialog .input-div {
+	width: 265px;
+	float: left;
+	margin-left: 10px;
+}
+
+#rates_dialog select, #rates_dialog input[type="text"] {
+	height: 36px;
+	margin: 0;
+	padding: 0 5px;
+	font-size: 18px;
+	font-weight: 600;
+}
+
+#rates_dialog #city_input {
+	width: 265px;
+}
+
+#rates_dialog #search_top_div .input-div label {
+        cursor: auto;
+}
+
+#rates_wrapper .rates-list.show-help .slider {
+	display: block;
+}
+#rates_wrapper .rates-list .slider {
+	display: none;
+	overflow-y: hidden;
+	max-height: 400px;
+	transition-property: all;
+	transition-duration: .75s;
+	transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+	background-color: #F5F5FF;
+	border-bottom: 1px solid #dcdcdc;
+	padding: 30px;
+	padding-left: 125px;
+	padding-right: 125px;
+	font-size: 12px;
+}
+#rates_wrapper .rates_container {
+	margin-right: 110px;
+	margin-left: 110px;
+	margin-top: 30px;
+	margin-bottom: 80px;
+}
+#rates_wrapper .rates_container .rates-grid {
+	margin-top: 15px;
+}
+#rates_wrapper .rates_container .rates-grid .rates-rows .empty-search-row,
+#rates_wrapper .rates_container .rates-grid .rates-rows .no-rates-row {
+	display: none;
+	padding: 16px;
+	text-align: center;
+}
+#rates_wrapper .rates_container .rates-grid .rates-rows .info-bar {
+	margin: 10px;
+	height: 60px;
+}
+#rates_wrapper .rates_container .rates-grid .rates-rows .info-bar .info-control {
+	color: #22ccff;
+	font-size: 12px;
+	cursor: pointer;
+	text-decoration: none;
+}
+#rates_wrapper .rates_container .rates-grid .rates-rows .info-bar .info-control .info-cell {
+	vertical-align: middle;
+	display: inline-block;
+	overflow: hidden;
+	margin-left: 5px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+#rates_wrapper .rates-list.show-help .rates-grid .rates-rows .info-bar .info-control .info-cell .less,
+#rates_wrapper .rates-grid .rates-rows .info-bar .info-control .info-cell .more,
+#rates_wrapper .rates_container .rates-grid .rates-rows .empty-search-row.show,
+#rates_wrapper .rates_container .rates-grid .rates-rows .no-rates-row.show {
+	display: block;
+}
+#rates_wrapper .rates-grid .rates-rows .info-bar .info-control .info-cell .less,
+#rates_wrapper .rates-list.show-help .rates-grid .rates-rows .info-bar .info-control .info-cell .more {
+	display: none;
+}
+#rates_wrapper .rates_container .rates-grid .rates-rows .info-bar .info-control .help {
+	color: #22ccff;
+	font-size: 12px;
+}
+#rates_wrapper .rates_container .rates-grid .rates-rows .info-bar .info-control .search-box {
+	margin: 16px 0 16px 15px;
+	display: inline;
+}
+#rates_wrapper .rates_container .rates-grid .rates-rows .addrates-cells {
+	height: 60px;
+	line-height: 60px;
+	border: 1.5px dashed #dcdcdc;
+	border-radius: 4px;
+	background-color: transparent;
+	cursor: pointer;
+	margin-bottom: 15px;
+	overflow: hidden;
+	width: 530px;
+}
+#rates_wrapper .rates_container .rates-grid .rates-rows .addrates-cells .add-rates {
+	margin-bottom: 15px;
+	color: #B8B8B8;
+	font-size: 14px;
+	padding-left: 25px;
+	text-decoration: none;
+}
+#rates_wrapper .rates_container .rates-grid .rates-rows .add-rates:hover {
+	color: #999999;
+	border-color: #999999;
+}
+#rates_wrapper .rates_container .rates-grid .rates-rows .add-rates .icon-plus-sign {
+	color: #B8B8B8;
+}
+#rates_wrapper .rates_container .rates-grid .rates-rows .grid-row {
+	margin-bottom: 15px;
+	border-radius: 4px;
+	background: #ffffff; 
+	background: -moz-linear-gradient(top,  hsl(0,0%,100%) 0%, hsl(0,0%,87%) 100%); 
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,hsl(0,0%,100%)), color-stop(100%,hsl(0,0%,87%))); 
+	background: -webkit-linear-gradient(top,  hsl(0,0%,100%) 0%,hsl(0,0%,87%) 100%); 
+	background: -o-linear-gradient(top,  hsl(0,0%,100%) 0%,hsl(0,0%,87%) 100%); 
+	background: -ms-linear-gradient(top,  hsl(0,0%,100%) 0%,hsl(0,0%,87%) 100%); 
+	background: linear-gradient(to bottom,  hsl(0,0%,100%) 0%,hsl(0,0%,87%) 100%); 
+}
+#rates_wrapper .rates_container .rates-grid .grid-row.title {
+	height: 60px;
+	line-height: 60px; 
+}
+#rates_wrapper .rates_container .rates-grid .grid-row.title .grid-cell {
+	text-align: center;
+	padding-left: 0;
+}
+#rates_wrapper .rates_container .rates-grid .grid-row .grid-cell {
+	vertical-align: top;
+	border: 1px solid #dcdcdc;
+	border-right: none;
+	border-left: none;
+	display: inline-block;
+	overflow: hidden;
+	padding-left: 10px;
+	width: 20%;
+	height: 100%;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+#rates_wrapper .rates_container .rates-grid .grid-row .grid-cell:first-child {
+	border-left: 1px solid #dcdcdc;
+	border-radius: 4px 0 0 4px;
+}
+#rates_wrapper .rates_container .rates-grid .grid-row .grid-cell:last-child {
+	border-right: 1px solid #dcdcdc;
+	border-radius: 0 4px 4px 0;
+}
+#rates_wrapper .rates_container .rates-grid .grid-row .grid-cell.centered {
+	padding: 0;
+	text-align: center;
+}
+#rates_wrapper .rates_container .rates-grid .grid-row .rates-cells {
+	height: 60px;
+	line-height: 60px;
+}
+#rates_wrapper .rates_container .rates-grid .grid-row .grid-cell.rates-5 {
+	width: 5%;
+	color: #999999;
+	font-size: 16px;
+}
+#rates_wrapper .rates_container .rates-grid .grid-row .grid-cell.rates-10 {
+	width: 10%;
+	color: #999999;
+	font-size: 16px;
+}
+#rates_wrapper .rates_container .rates-grid .grid-row .grid-cell.rates-20 {
+	width: 20%;
+	color: #999999;
+	font-size: 16px;
+}
+#rates_wrapper .rates_container .rates-grid .grid-row .grid-cell.rates-30 {
+	width: 30%;
+	color: #B8B8B8;
+	font-size: 14px;
+}
+#rates_wrapper .rates_container .rates-grid .grid-row .grid-cell.disabled i {
+	color: #333333;
+}
+#rates_wrapper .rates_container .rates-grid .grid-row .grid-cell.rates-hook {
+	width: 25%;
+	color: #B8B8B8;
+	font-size: 14px;
+}
+#rates_wrapper .rates_container .rates-grid .grid-row .grid-cell.actions {
+	width: 25%;
+	text-align: right;
+	padding-right: 10px;
+}
+#rates_wrapper .rates_container .rates-grid .grid-row .grid-cell.actions .edit,
+#rates_wrapper .rates_container .rates-grid .grid-row .grid-cell.actions .delete {
+	padding: 10px;
+	cursor: pointer;
+	text-decoration: none;
+}
+#rates_wrapper .rates_container .rates-grid .grid-row .grid-cell.actions .icon-wrench:hover,
+#rates_wrapper .rates_container .rates-grid .grid-row .grid-cell.actions .icon-trash:hover{
+	color: #000;
+}
+#rates_dialog form {
+	width: 570px;
+}
+#rates_dialog form > div {
+	padding: 10px 10px 10px 10px;
+	border-bottom: 1px solid #c1c1c1;
+	
+}
+#rates_dialog label {
+	text-align: left;
+}
+#rates_dialog label.retry {
+	width: 180px;
+}
+#rates_dialog label.custom {
+	width: 180px;
+	font-size: 12px;
+}
+#rates_dialog .control-group .controls {
+	margin-left: 30px;
+}
+#rates_dialog div.dialog-buttons-wrapper {
+	padding-bottom: 20px;
+	text-align: center;
+}
+#rates_dialog input {
+	width: 185px;
+	margin-left: 40px;
+}
+#rates_dialog input.same-line {
+	margin-left: 5px;
+}
+#rates_dialog input.input-small {
+	width: 100px;
+	margin-left:0;
+	margin-bottom: 5px;
+	margin-right: 5px;
+}
+#rates_dialog .control-group .controls.custom-info .cd .delete-cd {
+	margin-left: 15px;
+}
+#rates_dialog .control-group .controls.custom-info .cd .delete-cd .icon-trash {
+	text-decoration: none;
+}
+#rates_dialog .control-group .controls.custom-info .cd .delete-cd .icon-trash:hover {
+	color: #000;
+	cursor: pointer;
+}
+#rates_dialog .control-group .controls.custom-info {
+	margin-left: 0;
+}
+#rates_dialog controls.custom-info.hidden {
+	display: none;
+}
+#rates_dialog select {
+	width: 200px;
+	margin-left: 40px;
+}
+#rates_dialog select.select-retry {
+	width: 60px;
+	margin-left: 30px;
+}
+#rates_dialog select.select-hook {
+	width: 200px;
+}
+#selector, #select, #regular_select {
+    background-repeat: no-repeat;
+}

@@ -1,0 +1,100 @@
+<div id="rates_dialog">
+    <form class="form-horizontal labels" id="form_rates">
+	<div class="content">
+		<div class="row-fluid row-popup">
+			<div class="input-div">
+				<label>{{ i18n.rates.dialograte.ratename }}</label>
+				<input type="text" id="rate_name" required name="rate_name" value="{{rate_name}}"/>
+			</div>
+			<div class="input-div">
+				<label>{{ i18n.rates.dialograte.description }}</label>
+				<input type="text" id="description" name="description" value="{{description}}"/>
+			</div>
+		</div>
+
+		<div class="row-fluid row-popup">
+			<div class="input-div">
+				<label>{{ i18n.rates.dialograte.flatrate }}</label>
+				<input type="text" id="flaterate" name="flatrate" value="{{flatrate}}"/>
+			</div>
+			<div class="input-div">
+				<label>{{ i18n.rates.dialograte.carrier }}</label>
+				<input type="text" id="carrier" name="carrier" value="{{carrier}}"/>
+			</div>
+		</div>
+
+		<div class="row-fluid row-popup">
+			<div class="input-div">
+				<label>{{ i18n.rates.dialograte.surcharge }}</label>
+				<input type="text" id="rate_surcharge" name="rate_surcharge" value="{{rate_surcharge}}"/>
+			</div>
+			<div class="input-div">
+				<label>{{ i18n.rates.dialograte.ratenochargetime }}</label>
+				<input type="text" id="rate_nocharge_time" name="rate_nocharge_time" value="{{rate_nocharge_time}}"/>
+			</div>
+
+		</div>
+
+		<div class="row-fluid row-popup">
+			<div class="input-div">
+				<label>{{ i18n.rates.dialograte.min }}</label>
+				<input type="text" id="rate_minimum" required name="rate_minimum" value="{{rate_minimum}}"/>
+			</div>
+			<div class="input-div">
+				<label>{{ i18n.rates.dialograte.max }}</label>
+				<input type="text" id="rate_increment" required name="rate_increment" value="{{rate_increment}}"/>
+			</div>
+		</div>
+
+
+		<div class="row-fluid row-popup">
+			<div class="input-div">
+				<label>{{ i18n.rates.dialograte.prefix }}</label>
+				<input type="text" id="prefix" required name="prefix" value="{{prefix}}"/>
+			</div>
+			<div class="input-div">
+				<label>{{ i18n.rates.dialograte.isocode }}</label>
+				<input type="text" id="iso_country_code" name="iso_country_code" value="{{iso_country_code}}"/>
+			</div>
+		</div>
+
+		<div class="row-fluid row-popup">
+			<div class="input-div">
+				<label>{{ i18n.rates.dialograte.routecode }}</label>
+				<input type="text" id="route_code" required name="route_code" value="{{route_code}}"/>
+			</div>
+			<div class="input-div">
+				<label>{{ i18n.rates.dialograte.internalcost }}</label>
+				<input type="text" id="internal_rate_cost" required name="internal_rate_cost" value="{{internal_rate_cost}}"/>
+			</div>
+		</div>
+
+		<div class="row-fluid row-popup">
+			<div class="input-div">
+				<label>{{ i18n.rates.dialograte.ratecost }}</label>
+				<input type="text" id="rate_cost" required name="rate_cost" value="{{rate_cost}}"/>
+			</div>
+			<div class="input-div">
+				<label>{{ i18n.rates.dialograte.direction }}</label>
+				<input type="text" id="direction" required name="direction" value="{{direction}}"/>
+			</div>
+		</div>
+
+		<div class="row-fluid row-popup">
+			<div class="input-div">
+				<label>{{ i18n.rates.dialograte.routes }}</label>
+				<input type="text" id="routes" required name="routes" value="{{routes}}"/>
+			</div>
+			<div class="input-div">
+				<label>{{ i18n.rates.dialograte.options }}</label>
+				<input type="text" id="options" name="options" value="{{options}}"/>
+			</div>
+		</div>
+
+	</div>
+	<div class="dialog-buttons-wrapper">
+		<button id="save" type="button" class="btn btn-success save"> {{ i18n.rates.dialograte.save }} </button>
+	</div>
+    </form>
+
+</div>

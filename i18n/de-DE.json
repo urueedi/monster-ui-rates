@@ -1,0 +1,52 @@
+{
+	"rates": {
+		"addCD": " + Zufügen Gesprächstarif",
+		"addrates": "Zufügen eines Gesprächstarifs",
+		"delete": "Löschen",
+		"deleteRequest": "Sind Sie sicher das Sie diesen Gesprächstarif löschen möchten",
+		"deleteTitle": "Löschen?",
+		"dialograte": {
+			"addTitle":          "Gesprächstarif zufügen",
+			"editTitle":         "Gesprächstarif ändern",
+			"ratename":               "Zielname",
+			"isocode":                "ISO Code",
+			"direction":              "Aus / Eingehend",
+			"weight":                 "Gewichtung",
+			"surcharge":              "Zuschlag",
+			"pvttype":                "Typ",
+			"flatrate":               "Flatrate inkl.",
+			"prefix":                 "Wahl-Prefix",
+			"routecode":              "Route Code",
+			"ratecost":               "VP Tarif",
+			"internalcost":           "EP Tarif",
+			"routes":                 "Route (Regex)",
+			"max":                    "Max. Taktung in Sek",
+			"min":                    "Min. Taktung in Sek",
+			"description":            "Beschreibung",
+			"ratenochargetime":       "Noch keine Verrechnung (in Sek)",
+			"options":                "Optionen",
+			"carrier":                "Carriername",
+			"Direction": {
+				"incoming": "Eingehend",
+				"outgoing": "Ausgehend"
+			},
+			"placeholderName": "Benutzername",
+			"save": "Speichern",
+			"createrates": "Zufügen"
+		},
+		"editCD": " + Gesprächstarif ändern",
+		"empty-row": "Es wurden keine Gesprächstarife gemäss Ihrer Suche gefunden.",
+		"info": "Gesprächstarif ist eine App die Tarife für sich und Ihre Kunden und Partner anpassen können. Ohne ein anders Konto aktiviert können Sie Ihre Tarife für all Ihre Kunden ändern.",
+		"info2": "Um diese App für Ihre Kunden oder Partner zu benutzen, müssen Sie in den Kontenverwaltung das Konto auswählen und mit \"Benutze Konto\" aktivieren. Dann können Sie dessen Tarife Anpassen.",
+		"less": "Keine Appinfo Gesprächstarife",
+		"more": "AppInfo Gesprächstarife",
+		"no-ratess": "Es sind keine Gesprächstarife vorhanden.",
+		"search": "Suche",
+		"toastr": {
+			"addSuccess": "Gesprächstarif wurde erfolgreich gespeichert.",
+			"deleteSuccess": "Gesprächstarif wurde erfolgreich gelöscht.",
+			"editSuccess": "Gesprächstarif wurde erfolgreich geändert."
+		},
+		"warning": "Sie können nicht zweimal den gleichen Namen verwenden. Bitte geben Sie einen andern ein."
+	}
+}

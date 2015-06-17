@@ -1,0 +1,52 @@
+{
+	"rates": {
+		"addCD": "+ Adaugă date personalizate",
+		"addrate": "Rata de a crea noi",
+		"delete": "șterge",
+		"deleteRequest": "esti sigur ca vrei sa stergi",
+		"deleteTitle": "șterge ?",
+		"dialograte": {
+                        "addTitle": "Rata de a crea noi",
+                        "editTitle": "edita rata",
+                        "ratename": "destName",
+                        "isocode": "codul ISO",
+                        "direction": "out/intrare",
+                        "weight": "greutate",
+                        "surcharge": "suprataxă",
+                        "pvttype": "tip",
+                        "flatrate": "forfetară incl.",
+                        "prefix": "prefix",
+                        "routecode": "cod traseu",
+                        "ratecost": "costul out",
+                        "internalcost": "costurilor",
+                        "routes": "traseu (regex)",
+                        "max": "max. pontaj în sec",
+                        "min": "min. pontaj în sec",
+                        "description": "descriere",
+                        "ratenochargetime": "Nu rata befor (sec)",
+                        "options": "opțiuni",
+                        "carrier": "CarrierName",
+                        "Direction": {
+                                "incoming": "sosire",
+                                "outgoing": "de ieșire"
+                        },
+"placeholderName": "numele de utilizator",
+                        "createrates": "rata de add",
+			"save": "cu excepția"
+		},
+		"editCD": "+ Datelor edita personalizate",
+		"empty-row": "nu s-au gasit rate mathing de căutare.",
+		"info": "tarife este o capacitate care sistemul nostru poate notifica program web oricând ceva de interes se întâmplă. de exemplu, dacă cineva completeaza un apel telefonic, putem să vă anunțăm în timp real și să vă spun cine au fost să vorbesc cu, și pentru cât timp.",
+		"info2": "pentru a utiliza această caracteristică, configurați un url pentru serverul de web și spuneți-ne ce tip de evenimente pe care doriți să fie notificate cu privire la, și în ce format. această caracteristică se aplică pentru întregul cont, precum și orice aplicații în acest cont, dar nu sub- conturi.",
+		"less": "ascunde informații despre tarife",
+		"more": "Mai multe informații despre tarife",
+		"no-rates": "nu există rate configurate.",
+		"search": "căutare",
+		"toastr": {
+			"addSuccess": "Ați adăugat cu succes",
+			"deleteSuccess": "ați șters cu succes",
+			"editSuccess": "s-au schimbat cu succes"
+		},
+		"warning": "nu puteți salva datele personalizate cu același identificator. Vă rugăm introduceți un identificator diferit."
+	}
+}

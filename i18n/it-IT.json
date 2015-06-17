@@ -1,0 +1,52 @@
+{
+	"rates": {
+		"addCD": "+ Aggiungere dati personalizzati",
+		"addrate": "creare nuova tariffa",
+		"delete": "cancellare",
+		"deleteRequest": "sei sicuro di voler cancellare",
+		"deleteTitle": "eliminare ?",
+		"dialograte": {
+                        "addTitle": "creare nuova tariffa",
+                        "editTitle": "modifica rate",
+                        "ratename": "nomedest",
+                        "isocode": "codice ISO",
+                        "direction": "out/incoming",
+                        "weight": "il peso",
+                        "surcharge": "sovrapprezzo",
+                        "pvttype": "tipo",
+                        "flatrate": "Flat rate incl.",
+                        "prefix": "prefisso",
+                        "routecode": "codice percorso",
+                        "ratecost": "out costo",
+                        "internalcost": "costo",
+                        "routes": "percorso (regex)",
+                        "max": "max. clocking in sec",
+                        "min": "min. clocking in sec",
+                        "description": "descrizione",
+                        "ratenochargetime": "Non tasso befor (sec)",
+                        "options": "opzioni",
+                        "carrier": "CarrierName",
+                        "Direction": {
+                                "incoming": "in arrivo",
+                                "outgoing": "uscente"
+                        },
+"placeholderName": "nome utente",
+                        "createrates": "aggiungere rate",
+			"save": "salvare"
+		},
+		"editCD": "+ Modifica dei dati personalizzati",
+		"empty-row": "non ci sono stati trovati tassi mathing tua ricerca.",
+		"info": "tassi è una capacità in cui il nostro sistema può informare il programma web in qualsiasi momento qualcosa di interessante accade. per esempio, se qualcuno compie una telefonata, siamo in grado di farvi sapere in tempo reale e dirò chi stavano parlando, e per quanto tempo.",
+		"info2": "Per utilizzare questa funzione, configurare un URL al server web e dirci che tipo di eventi che si desidera ricevere una notifica, e in quale formato. questa caratteristica si applica a tutto l'account e qualsiasi applicazione all'interno di questo account, ma non sotto- conti.",
+		"less": "nascondere informazioni sui tassi",
+		"more": "maggiori informazioni su tariffe",
+		"no-rates": "non ci sono tariffe configurate.",
+		"search": "ricerca",
+		"toastr": {
+			"addSuccess": "avete aggiunto",
+			"deleteSuccess": "avete cancellato con successo",
+			"editSuccess": "avete cambiato con successo"
+		},
+		"warning": "Non è possibile salvare i dati personalizzati con lo stesso identificativo. inserisci un identificativo diverso."
+	}
+}

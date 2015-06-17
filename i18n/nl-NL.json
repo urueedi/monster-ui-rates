@@ -1,0 +1,52 @@
+{
+	"rates": {
+		"addCD": "+ Toevoegen aangepaste gegevens",
+		"addrate": "het creëren van nieuwe tarief",
+		"delete": "verwijderen",
+		"deleteRequest": "bent u zeker dat u wilt verwijderen",
+		"deleteTitle": "verwijderen?",
+		"dialograte": {
+                        "addTitle": "het creëren van nieuwe tarief",
+                        "editTitle": "bewerk tarief",
+                        "ratename": "destname",
+                        "isocode": "ISO-code",
+                        "direction": "out/inkomende",
+                        "weight": "gewicht",
+                        "surcharge": "toeslag",
+                        "pvttype": "type",
+                        "flatrate": "flatrate incl.",
+                        "prefix": "voorvoegsel",
+                        "routecode": "route code",
+                        "ratecost": "uit kosten",
+                        "internalcost": "in kosten",
+                        "routes": "route (regex)",
+                        "max": "max. klokken in sec",
+                        "min": "min. klokken in sec",
+                        "description": "beschrijving",
+                        "ratenochargetime": "niet rate goederenvervoerder (sec)",
+                        "options": "opties",
+                        "carrier": "CarrierName",
+                        "Direction": {
+                                "incoming": "inkomend",
+                                "outgoing": "aftredend"
+                        },
+"placeholderName": "gebruikersnaam",
+                        "createrates": "toe te voegen tarief",
+			"save": "sparen"
+		},
+		"editCD": "+ Bewerk aangepaste gegevens",
+		"empty-row": "er waren geen prijzen gevonden mathing uw zoekopdracht.",
+		"info": "tarieven is een mogelijkheid waar ons systeem uw ​​web -programma altijd iets van belang gebeurt kan melden. bijvoorbeeld als iemand een telefoongesprek is voltooid, kunnen we u laten weten in real -time en u vertellen wie ze sprak, en voor hoe lang.",
+		"info2": "om deze functie te gebruiken, configureert u een url naar uw webserver en vertel ons welke soorten evenementen u wilt worden geïnformeerd over, en in welk formaat. Deze functie geldt voor uw gehele account en alle apps binnen deze rekening, maar niet sub- accounts.",
+		"less": "info over de tarieven te verbergen",
+		"more": "Meer info over de tarieven",
+		"no-rates": "er zijn geen prijzen geconfigureerd.",
+		"search": "zoek op",
+		"toastr": {
+			"addSuccess": "je succes hebt toegevoegd",
+			"deleteSuccess": "je succes hebt verwijderd",
+			"editSuccess": "correcte vervanging"
+		},
+		"warning": "je kunt geen aangepaste gegevens op te slaan met dezelfde identifier. Voer een andere id."
+	}
+}

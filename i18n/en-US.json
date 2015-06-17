@@ -1,0 +1,52 @@
+{
+	"rates": {
+		"addCD": "+ Add Custom rate",
+		"addrate": "Create New rate",
+		"delete": "DELETE",
+		"deleteRequest": "Are you sure you want to delete ",
+		"deleteTitle": "Delete?",
+		"dialograte": {
+                        "addTitle": "Create New rate",
+                        "editTitle": "Edit rate",
+                        "ratename":               "Destname",
+                        "isocode":                "ISO Code",
+                        "direction":              "Out / Incoming",
+                        "weight":                 "Weight",
+                        "surcharge":              "Surcharge",
+                        "pvttype":                "Type",
+                        "flatrate":               "Flatrate incl.",
+                        "prefix":                 "Prefix",
+                        "routecode":              "Route Code",
+                        "ratecost":               "OUT Cost",
+                        "internalcost":           "IN Cost",
+                        "routes":                 "Route (Regex)",
+                        "max":                    "Max. Clocking in Sec",
+                        "min":                    "Min. Clocking in Sec",
+                        "description":            "Description",
+                        "ratenochargetime":       "not rate befor (sec)",
+                        "options":                "Options",
+                        "carrier":                "Carriername",
+                        "Direction": {
+                                "incoming": "Incoming",
+                                "outgoing": "Outgoing"
+                        },
+                        "placeholderName": "Username",
+                        "createrates": "add rate",
+			"save": "Ssve"
+		},
+		"editCD": "+ Edit Custom Data",
+		"empty-row": "There were no rates found mathing your search.",
+		"info": "Rates is a app there you can change your rates for your customers and partners.",
+		"info2": "To use this app for your customers you have activate in \"Accounts\" your customer and not sub-accounts.",
+		"less": "Hide Info On rates",
+		"more": "More Info On rates",
+		"no-rates": "There are no rates configured.",
+		"search": "Search",
+		"toastr": {
+			"addSuccess": "You have successfully added ",
+			"deleteSuccess": "You have successfully deleted ",
+			"editSuccess": "You have successfully changed "	
+		},
+		"warning": "You cannot save Custom Data with the same identifier. Please enter a different identifier."
+	}
+}

@@ -1,0 +1,65 @@
+<div id="rates_wrapper">
+	<div class="rates-list">
+	
+		<div class="slider">
+		{{ i18n.rates.info }} <br><br>
+		{{ i18n.rates.info2 }}
+		</div>
+
+		<div class="rates_container">
+			<div class="rates-grid">
+				<div class="rates-rows">
+					<div class="info-bar">
+						<div class="info-control">
+							<i class="info-cell icon-question-sign help"></i>
+							<div class="info-cell info-text">
+								<div class="less">{{i18n.rates.less}}</div>
+								<div class="more">{{i18n.rates.more}}</div>
+							</div>
+							<span class="info-cell search-box pull-right">
+								 <a href="#" role="button" class="download-csv"><i class="icon-download-alt icon-green"></i>Download</a> 
+								 <a href="#" role="button" class="download-csv"><i class="icon-download-alt icon-green"></i>Upoad</a> 
+								<i class="icon-search"></i>
+								<input type="text" class="search-query" placeholder="{{ i18n.rates.search }}..."></input>
+							</span>
+						</div>
+					</div>
+					
+					<div class="addrates-cells">
+						<a class="add-rates"><i class="icon-plus-sign"></i> {{ i18n.rates.addrates }} </a>
+					</div>
+					
+					<div class="empty-search-row">{{ i18n.rates.empty-row }} </div>
+					<div class="no-rates-row">{{ i18n.rates.no-rates }} </div>
+					
+					{{#each rates}}
+					<div class="grid-row" data-id="{{ id }}" data-search="{{ name }}">
+						<div class="rates-cells">
+
+							<div class="rates-10 grid-cell centered"> {{ name }} </div>
+							<div class="rates-10 grid-cell"> {{ direction }} </div>
+							<div class="rates-5 grid-cell"> {{ min }} </div>
+							<div class="rates-5 grid-cell"> {{ max }} </div>
+							<div class="rates-5 grid-cell"> {{ prefix }} </div>
+							<div class="rates-5 grid-cell"> {{ surcharge }} </div>
+							<div class="rates-5 grid-cell"> {{ isocode }} </div>
+							<div class="rates-5 grid-cell"> {{ weight }} </div>
+							<div class="rates-5 grid-cell"> {{ routecode }} </div>
+							<div class="rates-5 grid-cell"> {{ internalcost }} </div>
+							<div class="rates-5 grid-cell"> {{ cost }} </div>
+							<div class="rates-5 grid-cell"> {{ routes }} </div>
+							<div class="rates-5 grid-cell"> {{ options }} </div>
+
+							<div class="actions grid-cell">
+								<a class="edit" data-id="{{id}}"><i class="icon-wrench"></i></a>
+								<a class="delete" data-id="{{id}}"><i class="icon-trash"></i></a>
+							</div>
+
+						</div>
+					</div>
+					{{/each}}
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
