@@ -11,14 +11,14 @@
 				<div class="rates-rows">
 					<div class="info-bar">
 						<div class="info-control">
-							<i class="info-cell icon-question-sign help"></i>
+							<i class="info-cell fa fa-question-sign help"></i>
 							<div class="info-cell info-text">
 								<div class="less">{{i18n.rates.less}}</div>
 								<div class="more">{{i18n.rates.more}}</div>
 							</div>
 							<span class="info-cell search-box pull-right">
-								 <a href="#" role="button" class="download-csv"><i class="icon-download-alt icon-green"></i>Download</a> 
-								 <a href="#" role="button" class="download-csv"><i class="icon-download-alt icon-green"></i>Upoad</a> 
+								 <a href="#" role="button" class="download-csv"><i class="fa fa-download-alt fa-green"></i>Download</a> 
+								 <a href="#" role="button" class="download-csv"><i class="fa fa-download-alt fa-green"></i>Upoad</a> 
 								<i class="icon-search"></i>
 								<input type="text" class="search-query" placeholder="{{ i18n.rates.search }}..."></input>
 							</span>
@@ -33,26 +33,20 @@
 					<div class="no-rates-row">{{ i18n.rates.no-rates }} </div>
 					
 					{{#each rates}}
-					<div class="grid-row" data-id="{{ id }}" data-search="{{ name }}">
+					<div class="grid-row" data-id="{{ id }}" data-search="{{ rate_name }}">
 						<div class="rates-cells">
-
-							<div class="rates-10 grid-cell centered"> {{ name }} </div>
-							<div class="rates-10 grid-cell"> {{ direction }} </div>
-							<div class="rates-5 grid-cell"> {{ min }} </div>
-							<div class="rates-5 grid-cell"> {{ max }} </div>
-							<div class="rates-5 grid-cell"> {{ prefix }} </div>
-							<div class="rates-5 grid-cell"> {{ surcharge }} </div>
-							<div class="rates-5 grid-cell"> {{ isocode }} </div>
-							<div class="rates-5 grid-cell"> {{ weight }} </div>
-							<div class="rates-5 grid-cell"> {{ routecode }} </div>
-							<div class="rates-5 grid-cell"> {{ internalcost }} </div>
-							<div class="rates-5 grid-cell"> {{ cost }} </div>
-							<div class="rates-5 grid-cell"> {{ routes }} </div>
-							<div class="rates-5 grid-cell"> {{ options }} </div>
-
-							<div class="actions grid-cell">
-								<a class="edit" data-id="{{id}}"><i class="icon-wrench"></i></a>
-								<a class="delete" data-id="{{id}}"><i class="icon-trash"></i></a>
+							<div class="grid-cell left"> {{ rate_name }} </div>
+							<div class="rates-10 grid-cell left"> {{ direction }} </div>
+							<div class="rates-5 grid-cell left"> {{ flatrate }} </div>
+							<div class="rates-5 grid-cell left"> {{ iso_country_code }} </div>
+							<div class="rates-5 grid-cell left"> {{ prefix }} </div>
+							<div class="rates-5 grid-cell left"> {{ rate_cost }} </div>
+							<div class="rates-5 grid-cell left"> {{ rate_increment }} </div>
+							<div class="rates-5 grid-cell left"> {{ rate_minimum }} </div>
+							<div class="rates-5 grid-cell left"> {{ rate_surcharge }} </div>
+							<div class="rates-5 grid-cell actions">
+								<a class="edit" data-id="{{id}}"><i class="fa fa-wrench"></i></a>
+								<a class="delete" data-id="{{id}}"><i class="fa fa-trash"></i></a>
 							</div>
 
 						</div>

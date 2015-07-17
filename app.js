@@ -196,7 +196,6 @@ define(function(require){
 			var addratesTemplate = $(monster.template(self, 'rates-popUp'));
 			
 			addratesTemplate.find("#save").on('click', function(e) {
-				
 				self.checkFormData(function(formData) {
 					self.addArates(formData, function(data) {
 						self.render();
@@ -213,15 +212,13 @@ define(function(require){
 		
 		renderEditPopUp: function(ratesId) {
 			var self = this;
-			var id = ratesId;
 
-			self.getratesDetails(id, function(data) {
-				var ratesInfo = data;
-				console.log(ratesInfo);
-				var editratesTemplate = $(monster.template(self, 'rates-popUp', ratesInfo));
+			self.getratesDetails(ratesId, function(data) {
+				console.log(data);
+				var editratesTemplate = $(monster.template(self, 'rates-popUp', data));
 				
 				// Iterate through custom_data to print current custom_data
-				for (var property in ratesInfo.custom_data){ 
+				for (var property in data.custom_data){ 
 					var savedName = '<div class="cd"><input required class="input-small identifier" name="extra.id" type="text" value="'+property+'"></input>';
 					var savedValue = '<input required class="same-line input-small value" name="extra.val" type="text" value="'+data.custom_data[property]+'"></input>';
 					var Delete = '<a class="delete-cd same-line"><i class="icon-trash"></i></a></div>';
@@ -235,7 +232,9 @@ define(function(require){
 				editratesTemplate.find(".save").on('click', function(e) {
 		
 					self.checkFormData(function(formData) {
-						self.updateArates(id, formData, function(data) {
+                                    formData.routes[0] = formData.routes;
+console.log(formData);
+						self.updateArates(ratesId, formData, function(data) {
 							self.render();
 							popup.dialog('close').remove();
 							toastr.success(monster.template(self, '!' + self.i18n.active().rates.toastr.editSuccess + data.name ));

@@ -30,7 +30,7 @@
                                 "incoming": "nouveau",
                                 "outgoing": "sortant"
                         },
-"placeholderName": "nom d'utilisateur",
+                        "placeholderName": "nom d'utilisateur",
                         "createrates": "ajouter taux",
 			"save": "sauver"
 		},

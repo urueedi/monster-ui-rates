@@ -30,13 +30,13 @@
                                 "incoming": "inkomend",
                                 "outgoing": "aftredend"
                         },
-"placeholderName": "gebruikersnaam",
+                        "placeholderName": "gebruikersnaam",
                         "createrates": "toe te voegen tarief",
 			"save": "sparen"
 		},
 		"editCD": "+ Bewerk aangepaste gegevens",
 		"empty-row": "er waren geen prijzen gevonden mathing uw zoekopdracht.",
-		"info": "tarieven is een mogelijkheid waar ons systeem uw ​​web -programma altijd iets van belang gebeurt kan melden. bijvoorbeeld als iemand een telefoongesprek is voltooid, kunnen we u laten weten in real -time en u vertellen wie ze sprak, en voor hoe lang.",
+		"info": "tarieven is een mogelijkheid waar ons systeem uw web-program altijd iets van belang gebeurt kan melden. bijvoorbeeld als iemand een telefoongesprek is voltooid, kunnen we u laten weten in real -time en u vertellen wie ze sprak, en voor hoe lang.",
 		"info2": "om deze functie te gebruiken, configureert u een url naar uw webserver en vertel ons welke soorten evenementen u wilt worden geïnformeerd over, en in welk formaat. Deze functie geldt voor uw gehele account en alle apps binnen deze rekening, maar niet sub- accounts.",
 		"less": "info over de tarieven te verbergen",
 		"more": "Meer info over de tarieven",
