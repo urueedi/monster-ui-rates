@@ -1,13 +1,3 @@
-/* 	Author: Open Phone Net AG
-	Date: June 2014-July 2035
-	Left to do:
-		- URL needs to be present in rates Summary so that it can
-		be accessed quickly and efficiently
-		- Info Bar needs the rates Picture
-		- rates History API needs to be fixed and then added to be
-		part of this UI, the request and util are commented out
-*/
-
 define(function(require){
 	var $ = require('jquery'),
 		_ = require('underscore'),
@@ -58,15 +48,16 @@ define(function(require){
 		// subscription handlers
 		_render: function(container) {
 			var self = this;
-			
 			self.getrates(function(data) {
 				var ratesArray = {};
 				ratesArray.rates = data;
+				if(monster.apps.auth.currentAccount.is_reseller == true && monster.apps.auth.currentUser.priv_level == 'admin' && monster.apps.auth.currentUser.enabled == true)
+				    ratesArray.is_adminreseller = true;
 				ratesTemplate = $(monster.template(self, 'rates-layout', ratesArray)),
 				parent = _.isEmpty(container) ? $('#monster-content') : container;
 				
 				if (ratesArray.rates.length == 0) {
-					ratesTemplate.find(".no-rates-row").toggleClass("show");	
+					ratesTemplate.find(".no-rates-row").toggleClass("show");
 				}
 				
 				self.getAccountInfo(function(data) {
@@ -76,11 +67,10 @@ define(function(require){
 				});
 
 				self.bindEvents(ratesTemplate);
-
 				(parent)
 					.empty()
 					.append(ratesTemplate);
-			});	
+			});
 		},
 
 		bindEvents: function(template) {
@@ -118,13 +108,12 @@ define(function(require){
 
 			template.find(".delete").on('click', function(e) {
 				var ratesId = $(this).data('id');
-				
 				self.getratesDetails(ratesId, function(data) {
-					monster.ui.confirm(self.i18n.active().rates.deleteRequest + data.name + "?" , function() {
+					monster.ui.confirm(self.i18n.active().rates.deleteRequest + "("+data.rate_name+")" + "?" , function() {
 					
 						self.deleteArates(ratesId, function(data) {
 							self.render();
-							toastr.success(monster.template(self, '!' + self.i18n.active().rates.toastr.deleteSuccess + data.name ));
+							toastr.success(monster.template(self, '!' + "("+data.rate_name+") " + self.i18n.active().rates.toastr.deleteSuccess ));
 						});
 					});
 				});
@@ -148,10 +137,7 @@ define(function(require){
 			template.find(".upload-rates").on('click', function(e){
 				self.renderPopUpload();
 			});
-
 		},
-		
-
 
 		renderAddPopUpload: function() {
 			var self = this;
@@ -177,7 +163,7 @@ define(function(require){
 					self.addArates(formData, function(data) {
 						self.render();
 						popup.dialog('close').remove();
-						toastr.success(monster.template(self, '!' + self.i18n.active().rates.toastr.addSuccess + data.name ));
+						toastr.success(monster.template(self, '!' + self.i18n.active().rates.toastr.addSuccess + data.rate_name ));
 					});
 				});	
 			});
@@ -197,10 +183,12 @@ define(function(require){
 			
 			addratesTemplate.find("#save").on('click', function(e) {
 				self.checkFormData(function(formData) {
+                                    formData.routes = Array(formData.routes);
+                                    formData.options = Array(formData.options);
 					self.addArates(formData, function(data) {
 						self.render();
 						popup.dialog('close').remove();
-						toastr.success(monster.template(self, '!' + self.i18n.active().rates.toastr.addSuccess + data.name ));
+						toastr.success(monster.template(self, '!' + "("+data.rate_name+") " + self.i18n.active().rates.toastr.addSuccess ));
 					});
 				});	
 			});
@@ -230,14 +218,13 @@ define(function(require){
 				});
 				
 				editratesTemplate.find(".save").on('click', function(e) {
-		
 					self.checkFormData(function(formData) {
-                                    formData.routes[0] = formData.routes;
-console.log(formData);
+                                        formData.routes = Array(formData.routes);
+                                        formData.options = Array(formData.options);
 						self.updateArates(ratesId, formData, function(data) {
 							self.render();
 							popup.dialog('close').remove();
-							toastr.success(monster.template(self, '!' + self.i18n.active().rates.toastr.editSuccess + data.name ));
+							toastr.success(monster.template(self, '!' + " ("+data.rate_name+") " + self.i18n.active().rates.toastr.editSuccess ));
 						});
 					});
 				});

@@ -1,3 +1,11 @@
+#rates_wrapper .access-forbidden {
+        color: #22a5ff;
+        font-size: 30px;
+        line-height: 30px;
+        text-align: center;
+        margin-top: 60px;
+        text-shadow: 1px 1px 0px #ccc;
+}
 #rates_dialog a {
 	color: #009DE6;
 	font-size: 12px;
@@ -130,13 +138,22 @@
 #rates_wrapper .rates_container .rates-grid .rates-rows .grid-row {
 	margin-bottom: 15px;
 	border-radius: 4px;
-	background: #ffffff; 
-	background: -moz-linear-gradient(top,  hsl(0,0%,100%) 0%, hsl(0,0%,87%) 100%); 
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,hsl(0,0%,100%)), color-stop(100%,hsl(0,0%,87%))); 
-	background: -webkit-linear-gradient(top,  hsl(0,0%,100%) 0%,hsl(0,0%,87%) 100%); 
-	background: -o-linear-gradient(top,  hsl(0,0%,100%) 0%,hsl(0,0%,87%) 100%); 
-	background: -ms-linear-gradient(top,  hsl(0,0%,100%) 0%,hsl(0,0%,87%) 100%); 
-	background: linear-gradient(to bottom,  hsl(0,0%,100%) 0%,hsl(0,0%,87%) 100%); 
+	background: #9B9B9B;
+	background: transparent linear-gradient(to bottom, #E1E0E0 0%, #CBC9C9 100%) repeat scroll 0% 0%;
+	background: -webkit-linear-gradient(top,  hsl(0,0%,100%) 0%,hsl(0,0%,87%) 100%);
+	background: -o-linear-gradient(top,  hsl(0,0%,100%) 0%,hsl(0,0%,87%) 100%);
+	background: -ms-linear-gradient(top,  hsl(0,0%,100%) 0%,hsl(0,0%,87%) 100%);
+	background: linear-gradient(to bottom,  hsl(0,0%,94%) 0%,hsl(0,1%,82%) 100%);
+}
+#rates_wrapper .rates_container .rates-grid .rates-rows .grid-head {
+	margin-bottom: 15px;
+	border-radius: 4px;
+	background: #9B9B9B;
+	background: transparent linear-gradient(to bottom, #E1E0E0 0%, #CBC9C9 100%) repeat scroll 0% 0%;
+	background: -webkit-linear-gradient(top,  hsl(0,0%,100%) 0%,hsl(0,0%,87%) 100%);
+	background: -o-linear-gradient(top,  hsl(0,0%,100%) 0%,hsl(0,0%,87%) 100%);
+	background: -ms-linear-gradient(top,  hsl(0,0%,100%) 0%,hsl(0,0%,87%) 100%);
+	background: linear-gradient(to bottom, hsl(191, 99%, 58%) 0%,hsl(195, 64%, 41%) 100%);
 }
 #rates_wrapper .rates_container .rates-grid .grid-row.title {
 	height: 40px;
@@ -146,7 +163,7 @@
 	text-align: center;
 	padding-left: 0;
 }
-#rates_wrapper .rates_container .rates-grid .grid-row .grid-cell {
+#rates_wrapper .rates_container .rates-grid .grid-cell {
 	vertical-align: top;
 	border: 1px solid #dcdcdc;
 	border-right: none;
@@ -154,67 +171,66 @@
 	display: inline-block;
 	overflow: hidden;
 	padding-left: 10px;
-	width: 20%;
 	height: 100%;
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 }
-#rates_wrapper .rates_container .rates-grid .grid-row .grid-cell:first-child {
+#rrates_wrapper .rates_container .rates-grid .grid-cell:first-child {
 	border-left: 1px solid #dcdcdc;
 	border-radius: 4px 0 0 4px;
 }
-#rates_wrapper .rates_container .rates-grid .grid-row .grid-cell:last-child {
-	border-right: 1px solid #dcdcdc;
-	border-radius: 0 4px 4px 0;
-}
-#rates_wrapper .rates_container .rates-grid .grid-row .grid-cell.centered {
+#rates_wrapper .rates_container .rates-grid .grid-cell.centered {
 	padding: 0;
 	text-align: center;
 }
-#rates_wrapper .rates_container .rates-grid .grid-row .rates-cells {
+#rates_wrapper .rates_container .rates-grid .rates-cells {
 	height: auto;
-	line-height: 30px;
+	line-height: 25px;
 }
-#rates_wrapper .rates_container .rates-grid .grid-row .grid-cell.rates-5 {
+#rates_wrapper .rates_container .rates-grid .head-cells {
+	height: auto;
+	line-height: 40px;
+}
+#rates_wrapper .rates_container .rates-grid .grid-cell.rates-5 {
 	min-width: 50px;
-	color: #999999;
+	max-width: 50px;
 	font-size: 14px;
 }
-#rates_wrapper .rates_container .rates-grid .grid-row .grid-cell.rates-10 {
+#rates_wrapper .rates_container .rates-grid .grid-cell.rates-10 {
 	min-width: 100px;
-	color: #999999;
+	max-width: 100px;
 	font-size: 14px;
 }
-#rates_wrapper .rates_container .rates-grid .grid-row .grid-cell.rates-20 {
+#rates_wrapper .rates_container .rates-grid .grid-cell.rates-20 {
 	min-width: 200px;
-	color: #999999;
+	max-width: 200px;
 	font-size: 14px;
 }
-#rates_wrapper .rates_container .rates-grid .grid-row .grid-cell.rates-30 {
+#rates_wrapper .rates_container .rates-grid .grid-cell.rates-30 {
 	min-width: 300px;
-	color: #B8B8B8;
+	max-width: 300px;
 	font-size: 14px;
 }
-#rates_wrapper .rates_container .rates-grid .grid-row .grid-cell.disabled i {
+#rates_wrapper .rates_container .rates-grid .grid-cell.disabled i {
 	color: #333333;
 }
-#rates_wrapper .rates_container .rates-grid .grid-row .grid-cell.rates-hook {
+#rates_wrapper .rates_container .rates-grid .grid-cell.rates-hook {
 	width: 25%;
 	color: #B8B8B8;
 	font-size: 14px;
 }
-#rates_wrapper .rates_container .rates-grid .grid-row .grid-cell.actions {
+#rates_wrapper .rates_container .rates-grid .grid-cell.actions {
 	padding-right: 10px;
 }
-#rates_wrapper .rates_container .rates-grid .grid-row .grid-cell.actions .edit,
-#rates_wrapper .rates_container .rates-grid .grid-row .grid-cell.actions .delete {
+#rates_wrapper .rates_container .rates-grid .grid-cell.actions .edit,
+#rates_wrapper .rates_container .rates-grid .grid-cell.actions .delete {
 	padding: 10px;
 	cursor: pointer;
 	text-decoration: none;
 }
-#rates_wrapper .rates_container .rates-grid .grid-row .grid-cell.actions .icon-wrench:hover,
-#rates_wrapper .rates_container .rates-grid .grid-row .grid-cell.actions .icon-trash:hover{
+#rates_wrapper .rates_container .rates-grid .grid-cell.actions .icon-wrench:hover,
+#rates_wrapper .rates_container .rates-grid .grid-cell.actions .icon-trash:hover{
 	color: #000;
 }
 #rates_dialog form {
