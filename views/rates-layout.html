@@ -1,12 +1,11 @@
 <div id="rates_wrapper">
 
-        {{#if is_adminreseller }}
+        {{#if is_superadminreseller }}
 
 	<div class="rates-list">
 	
 		<div class="slider">
-		{{ i18n.rates.info }} <br><br>
-		{{ i18n.rates.info2 }}
+		{{ i18n.rates.info_superduper }}
 		</div>
 
 		<div class="rates_container">
@@ -41,7 +40,8 @@
 							<div class="rates-10 grid-cell left"> {{ i18n.rates.dialograte.direction }} </div>
 							<div class="rates-10 grid-cell left"> {{ i18n.rates.dialograte.flatrate }} </div>
 							<div class="rates-10 grid-cell left"> {{ i18n.rates.dialograte.prefix }} </div>
-							<div class="rates-10 grid-cell left"> {{ i18n.rates.dialograte.internalcost }} </div>
+							<div class="rates-10 grid-cell left"> {{ i18n.rates.dialograte.internal }} </div>
+							<div class="rates-10 grid-cell left"> {{ i18n.rates.dialograte.ratecost }} </div>
 							<div class="rates-10 grid-cell left"> {{ i18n.rates.dialograte.surcharge }} </div>
 							<div class="rates-10 grid-cell left"> {{ i18n.rates.dialograte.max }} </div>
 							<div class="rates-10 grid-cell left"> {{ i18n.rates.dialograte.min }} </div>
@@ -54,6 +54,7 @@
 							<div class="rates-10 grid-cell left"> {{ direction }} </div>
 							<div class="rates-10 grid-cell left"> {{ flatrate }} </div>
 							<div class="rates-10 grid-cell left"> {{ prefix }} </div>
+							<div class="rates-10 grid-cell left"> {{ rate_int }} </div>
 							<div class="rates-10 grid-cell left"> {{ rate_cost }} </div>
 							<div class="rates-10 grid-cell left"> {{ rate_surcharge }} </div>
 							<div class="rates-10 grid-cell left"> {{ rate_increment }} </div>
@@ -61,6 +62,77 @@
 							<div class="rates-10 grid-cell actions">
 								<a class="edit" data-id="{{id}}"><i class="fa fa-wrench"></i></a>
 								<a class="delete" data-id="{{id}}"><i class="fa fa-trash"></i></a>
+							</div>
+
+						</div>
+					</div>
+					{{/each}}
+				</div>
+			</div>
+		</div>
+	</div>
+
+        {{/if}}
+        {{#if is_adminreseller }}
+
+	<div class="rates-list">
+	
+		<div class="slider">
+		{{ i18n.rates.info_reseller }}
+		</div>
+
+		<div class="rates_container">
+			<div class="rates-grid">
+				<div class="rates-rows">
+					<div class="info-bar">
+						<div class="info-control">
+							<i class="info-cell fa fa-question help"></i>
+							<div class="info-cell info-text">
+								<div class="less">{{i18n.rates.less}}</div>
+								<div class="more">{{i18n.rates.more}}</div>
+							</div>
+							<span class="info-cell search-box pull-right">
+								 <a href="#" role="button" class="download-csv"><i class="fa fa-download fa-green"></i>Download</a> 
+								 <a href="#" role="button" class="upload-csv"><i class="fa fa-upload fa-green"></i>Upoad</a> 
+								<i class="fa fa-search"></i>
+								<input type="text" class="search-query" placeholder="{{ i18n.rates.search }}..."></input>
+							</span>
+						</div>
+					</div>
+					
+					<div class="addrates-cells">
+						<a class="add-rates"><i class="fa fa-plus"></i> {{ i18n.rates.addrates }} </a>
+					</div>
+					
+					<div class="empty-search-row">{{ i18n.rates.empty-row }} </div>
+					<div class="no-rates-row">{{ i18n.rates.no-rates }} </div>
+					
+					<div class="grid-head">
+						<div class="head-cells">
+							<div class="rates-20 grid-cell left"> {{ i18n.rates.dialograte.ratename }} </div>
+							<div class="rates-10 grid-cell left"> {{ i18n.rates.dialograte.direction }} </div>
+							<div class="rates-10 grid-cell left"> {{ i18n.rates.dialograte.flatrate }} </div>
+							<div class="rates-10 grid-cell left"> {{ i18n.rates.dialograte.prefix }} </div>
+							<div class="rates-10 grid-cell left"> {{ i18n.rates.dialograte.internal }} </div>
+							<div class="rates-10 grid-cell left"> {{ i18n.rates.dialograte.ratecost }} </div>
+							<div class="rates-10 grid-cell left"> {{ i18n.rates.dialograte.surcharge }} </div>
+							<div class="rates-10 grid-cell left"> {{ i18n.rates.dialograte.max }} </div>
+							<div class="rates-10 grid-cell left"> {{ i18n.rates.dialograte.min }} </div>
+						</div>
+					</div>
+					{{#each rates}}
+					<div class="grid-row" data-id="{{ id }}" data-search="{{ rate_name }}">
+						<div class="rates-cells">
+							<div class="rates-20 grid-cell left"> {{ rate_name }} </div>
+							<div class="rates-10 grid-cell left"> {{ direction }} </div>
+							<div class="rates-10 grid-cell left"> {{ flatrate }} </div>
+							<div class="rates-10 grid-cell left"> {{ prefix }} </div>
+							<div class="rates-10 grid-cell left"> {{ rate_int }} </div>
+							<div class="rates-10 grid-cell left"> {{ rate_cost }} </div>
+							<div class="rates-10 grid-cell left"> {{ rate_surcharge }} </div>
+							<div class="rates-10 grid-cell left"> {{ rate_increment }} </div>
+							<div class="rates-10 grid-cell left"> {{ rate_minimum }} </div>
+							<div class="rates-10 grid-cell actions">
 							</div>
 
 						</div>
@@ -105,7 +177,7 @@
 							<div class="rates-30 grid-cell left"> {{ rate_name }} </div>
 							<div class="rates-10 grid-cell left"> {{ flatrate }} </div>
 							<div class="rates-10 grid-cell left"> {{ prefix }} </div>
-							<div class="rates-10 grid-cell left"> {{ sumcost }} </div>
+							<div class="rates-10 grid-cell left"> {{ ratesum }} </div>
 							<div class="rates-10 grid-cell left"> {{ rate_increment }} </div>
 						</div>
 					</div>

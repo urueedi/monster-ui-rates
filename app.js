@@ -51,8 +51,11 @@ define(function(require){
 			self.getrates(function(data) {
 				var ratesArray = {};
 				ratesArray.rates = data;
-				if(monster.apps.auth.currentAccount.is_reseller == true && monster.apps.auth.currentUser.priv_level == 'admin' && monster.apps.auth.currentUser.enabled == true)
+				if(monster.apps.auth.currentAccount.is_reseller == true && monster.apps.auth.currentUser.priv_level == 'admin' && monster.apps.auth.currentUser.enabled == true && monster.apps.auth.currentAccount.superduper_admin == true)
+				    ratesArray.is_superadminreseller = true;
+				else if(monster.apps.auth.currentAccount.is_reseller == true && monster.apps.auth.currentUser.priv_level == 'admin' && monster.apps.auth.currentUser.enabled == true)
 				    ratesArray.is_adminreseller = true;
+
 				ratesTemplate = $(monster.template(self, 'rates-layout', ratesArray)),
 				parent = _.isEmpty(container) ? $('#monster-content') : container;
 				
