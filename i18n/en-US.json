@@ -37,7 +37,7 @@
 		"editCD": "+ Edit Custom Data",
 		"empty-row": "There were no rates found mathing your search.",
 		"info_superduper": "Rates is a app there you can change global rates table for your customers. To use this app for your customers you have activate in \"Accounts\" your accounts and subaccounts.",
-		"info_reseller": "Rates is a app there you can see your rates for your accounts and subaccounts.",
+		"info_reseller": "Rates is a app there you can see your rates for your accounts and subaccounts. (Changing rates is planning)",
 		"info_user": "Rates is a app there you can see your personal rates for your account.",
 		"less": "Hide Info",
 		"more": "More Info of Rates",
@@ -46,7 +46,7 @@
 		"toastr": {
 			"addSuccess": "You have rate successfully added ",
 			"deleteSuccess": "You have rate successfully deleted ",
-			"editSuccess": "You have rate successfully changed "	
+			"editSuccess": "You have rate successfully changed "
 		},
 		"warning": "You cannot save Custom Data with the same identifier. Please enter a different identifier."
 	}
