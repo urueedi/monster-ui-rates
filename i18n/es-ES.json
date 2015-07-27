@@ -1,0 +1,53 @@
+{
+        "rates": {
+                "AddCD": "+ Añadir tasa personalizado",
+                "addrates": "Crear nueva tasa",
+                "delete": "Borrar de la tasa",
+                "DeleteRequest": "¿Seguro que quieres eliminar la tasa",
+                "DeleteTitle": "Eliminar?",
+                "Dialograte": {
+                        "AddTitle": "Crear nueva tasa",
+                        "EditTitle": "tasa Editar",
+                        "Ratename": "Destname",
+                        "Isocode": "Código ISO",
+                        "dirección": "In / Out",
+                        "weight": "Peso",
+                        "surcharge": "Recargo",
+                        "pvttype": "Tipo",
+                        "flatrate": "incl Flatrate.",
+                        "prefix": "Prefijo",
+                        "routecode": "Código de Ruta",
+                        "ratecost": "Costo",
+                        "internal": "en el costo",
+                        "routes": "Ruta (Regex)",
+                        "max": "Clocking",
+                        "min": ". Min Clocking",
+                        "descripción": "Descripción",
+                        "ratenochargetime": "tasa después",
+                        "opciones": "Opciones",
+                        "carrier": "CarrierName",
+                        "direction": {
+                                "incommint": "entrante",
+                                "outgoing": "saliente"
+                        },
+                        "placeholderName": "Nombre de usuario",
+                        "createrates": "añadir tasa",
+                        "save": "Salvar"
+                },
+                "editCD": "+ Editar datos personalizados",
+                "empty-row": "No hubo tasas encontradas mathing su búsqueda.",
+                "Info_superduper": "Las tasas es una aplicación no puede cambiar la tabla global de tarifas para sus clientes Para utilizar esta aplicación para sus clientes que tiene en activar. \"Cuentas sus cuentas\" y subaccounts. ",
+                "Info_reseller": ". Precios es una aplicación no puede ver sus tarifas para sus cuentas y subcuentas (Cambio de tarifas es la planificación)",
+                "Info_user": "Las tasas es una aplicación no puede ver sus tasas personales para su cuenta.",
+                "less": "Hide Info",
+                "more": "Más Información de Precios",
+                "no-rates": "No hay tarifas configurados.",
+                "search": "Buscar",
+                "toastr": {
+                        "addSuccess": "Ha tasa agregado con éxito",
+                        "deleteSuccess": "Ha tasa eliminado correctamente",
+                        "editSuccess": "Ha cambiado tasa de éxito"
+                },
+                "warning": "No se pueden guardar datos personalizados con el mismo identificador favor, introduzca un identificador diferente."
+        }
+}
