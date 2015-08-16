@@ -9,10 +9,28 @@
            "extended_description": "You can setup and manage your rates per web.",
            "features": [ "rateentry per web manage", "create new rates per csv upload" ]
        },
+       "ro-RO": {
+           "label": "rates",
+           "description": "Set up and manage rates for your customers and suppliers.",
+           "extended_description": "You can setup and manage your rates per web.",
+           "features": [ "rateentry per web manage", "create new rates per csv upload" ]
+       },
+       "ru-RU": {
+           "label": "rates",
+           "description": "Set up and manage rates for your customers and suppliers.",
+           "extended_description": "You can setup and manage your rates per web.",
+           "features": [ "rateentry per web manage", "create new rates per csv upload" ]
+       },
+       "nl-NL": {
+           "label": "rates",
+           "description": "Set up and manage rates for your customers and suppliers.",
+           "extended_description": "You can setup and manage your rates per web.",
+           "features": [ "rateentry per web manage", "create new rates per csv upload" ]
+       },
        "de-DE": {
-           "label": "Gesprächstarife",
-           "description": "Einrichten und verwalten Ihrer Gesprächstarife für Ihre Kunden und Liefereranten.",
-           "extended_description": "Sie können die Gesprächstarife einpflegen und verändern.",
+           "label": "Verbindungstarife",
+           "description": "Einrichten und verwalten Ihrer Verbindungstarife für Ihre Kunden und Liefereranten.",
+           "extended_description": "Sie können die Verbindungstarife einpflegen und verändern.",
            "features": [ "Einzelne Tarife erstellen und anpassen", "Neue Tarife upload per csv" ]
        },
        "it-IT": {
@@ -28,12 +46,12 @@
            "features": [ "rateentry per web manage", "create new rates per csv upload" ]
        }
    },
-   "tags": [ "developer" ],
+   "tags": [ "carrier", "reseller", "all" ],
    "author": "ALLIP.ovh",
    "version": "1.0",
    "license": "MPL",
    "price": "0.00",
-   "icon": "rates_app.png",
-   "screenshots": [ "rates1.png", "rates2.png", "rates3.png" ],
+   "icon": "Rates_app.png",
+   "screenshots": [ "rates_1.png", "rates_2.png" ],
    "pvt_type": "app"
 }
