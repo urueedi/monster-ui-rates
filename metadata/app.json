@@ -44,6 +44,12 @@
            "description": "Set up and manage rates for your customers and suppliers.",
            "extended_description": "You can setup and manage your rates per web.",
            "features": [ "rateentry per web manage", "create new rates per csv upload" ]
+       },
+       "es-ES": {
+           "label": "rates",
+           "description": "Set up and manage rates for your customers and suppliers.",
+           "extended_description": "You can setup and manage your rates per web.",
+           "features": [ "rateentry per web manage", "create new rates per csv upload" ]
        }
    },
    "tags": [ "carrier", "reseller", "all" ],
